@@ -1,0 +1,21 @@
+.navigation {
+  padding: 0 30px;
+}
+
+.navigation > a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav_link {
+  color: rgb(78, 78, 80);
+  font-weight: 400;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active {
+  color: #3f51b5;
+  font-weight: 600;
+}

@@ -1,0 +1,25 @@
+.moviesCard_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 15px;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.moviesCard_list__item {
+  max-width: 220px;
+  display: block;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.moviesCard_list__item_title {
+  padding: 5px;
+}
