@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import fetchApi from "../../services/fetchApi";
+import s from './Cast.module.css'
 
 class Cast extends Component {
   state = {
@@ -18,9 +19,9 @@ class Cast extends Component {
   render() {
     const { cast } = this.state;
     return (
-      <ul>
+      <ul className={s.cast_flex}>
         {cast.map(({ original_name, profile_path, character, cast_id }) => (
-          <li key={cast_id}>
+          <li className={s.cast_item} key={cast_id}>
             <img
               alt={`Poster ${original_name}`}
               src={

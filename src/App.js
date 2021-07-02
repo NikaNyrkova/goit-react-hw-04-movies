@@ -30,8 +30,9 @@ function App() {
             render={(props) => <MovieDetailsPage {...props} />}
           />
           <Route path={routes.moviesPage} component={MoviesPage} />
-          <Redirect path={routes.home} />
+         
         </Switch>
+         <Redirect path={routes.home} />
       </Suspense>
     </div>
   );

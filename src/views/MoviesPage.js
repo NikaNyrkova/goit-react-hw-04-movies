@@ -12,13 +12,13 @@ class MoviesPage extends Component {
   };
 
   componentDidMount() {
-    if (this.props.location.search) {
+    if (this.props.location?.search) {
       const query = this.props.location.search.slice(7);
 
       fetchApi
       .fetchMovieOnQuery(query.trim())
       .then((response) => {
-        this.setState({ movies: response.data.results })
+        this.setState({ movies: response.data.results, searchQuery: query })
       })
       .catch((error) => this.setState({ error }));
     } 

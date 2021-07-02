@@ -1,0 +1,11 @@
+.cast_flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  list-style: none;
+}
+
+.cast_item {
+  margin-right: 30px;
+  max-width: 220px;
+}
